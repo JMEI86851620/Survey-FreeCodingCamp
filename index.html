@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Poppins:ital,wght@0,400;1,200&family=Ubuntu&display=swap" rel="stylesheet">
+  <img class="olympic-img" src="pictures/olympicsgetty.jpg" alt="olympic-img">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title"> Should Kamila Valieva be disqualified for doping in Beijing Winter Olympics 2022</h1>
+    <p id="description">We will like to hear your opinion</p>
+
+    <form id="survey-form" action="index.html" method="post">
+
+      <div class="group">
+        <label id="name-label"> Your name</label><br>
+        <input class="form-control" placeholder="Enter Your Name" required name="name" value=""><br>
+      </div>
+
+      <div class="group">
+        <label id="email-label">Your email </label><br>
+        <input class="form-control" placeholder="Enter Your Email" required name="email" value=""><br>
+      </div>
+
+      <div class="group">
+        <label id="number-label">Your number</label><br>
+        <input class="form-control" placeholder="Enter Your Number" required min="2" max="10"></label><br>
+      </div>
+
+      <div class="group">
+        <p>What should happen to Kamila Valieva </p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value> Select one</option>
+          <option value="Band">Band for life</option>
+          <option value="Disqualified">Disqualified for 2022 Olympics</option>
+          <option value="suspension">Suspension for next Olympic</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <p>Should IOC change age requirement for figure skating?</p>
+
+        <label class="radio">
+          <input type="radio" name="">Definitely</label>
+        <label class="radio">
+          <input type="radio" name="">Maybe</label>
+        <label class="radio">
+          <input type="radio" name="">Not Sure</label>
+      </div>
+
+      <div class="group">
+        <p>Should IOC take Kamila Valieva medals away for Beijing 2022 Olympics?</p>
+
+        <label class="checkbox">
+          <input type="checkbox" name="">Yes</label>
+        <label class="checkbox">
+          <input type="checkbox" name="">No</label>
+        <label class="checkbox">
+          <input type="checkbox" name="">Not Sure</label>
+      </div>
+
+      <div class="group"><br>
+        <label>your comments: </label><br>
+        <textarea class="input-textarea" name="message" placeholder="Enter you comments here..." row="40" cols="80"></textarea><br>
+      </div>
+
+      <div class="group">
+        <button id="submit" type="submit" name="button">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
